@@ -19,6 +19,9 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    background-image: url("https://wallsbazar.com/wp-content/uploads/2022/03/Neon-Backgrounds-Pictures.jpg");
+    background-size: cover;
+    background-size: cover;
   }
   
   .description {
@@ -37,7 +40,7 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color:white;
     color: #000000;
     border-top: 1px dashed #000000;
   }

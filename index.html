@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Work Day Scheduler</title>
     
   </head>
@@ -34,14 +34,14 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col-2 time-block hour">Time</th>
-            <th scope="col">Project</th>
-            <th scope="col" id="handle">Save event</th>
+            <th class="col-2 time-block hour">Time</th>
+            <th class="col">Project</th>
+            <th class="col" id="handle">Save event</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="col-2 time-block hour">9am</th>
+            <th class="col-2 time-block hour" id="9">9am</th>
             <td>
               <textarea
               id="nineAm"
@@ -52,16 +52,14 @@
             ></textarea>
             </td>
             <td>
-              <td>
-                <div class="col-2 saveBtn">
-                  <button id="handle" class="btn saveBtn">Save</button>
+                <div class="col-2 saveBtn" data-hr="9">
+                  <button id="handle" class="btn btn-secondary">Save</button>
                 </div>
-              </td>
             </td>
             
           </tr>
           <tr>
-            <th scope="col-2 time-block hour">10am</th>
+            <th scope="col-2 time-block hour" id="10">10am</th>
             <td>   <textarea
               id="tenAm"
               placeholder="Add events here"
@@ -71,11 +69,9 @@
             ></textarea>
           </td>
           <td>
-            <td>
-              <div class="col-2 saveBtn">
-                <button id="handle" class="btn saveBtn">Save</button>
+              <div class="col-2 saveBtn" data-hr="10">
+                <button id="handle" class="btn btn-secondary">Save</button>
               </div>
-            </td>
           </td>
            
           </tr>
@@ -90,11 +86,9 @@
             ></textarea>
           </td>
           <td>
-            <td>
-              <div class="col-2 saveBtn">
-                <button id="handle" class="btn saveBtn">Save</button>
+              <div class="col-2 saveBtn" data-hr="11">
+                <button id="handle" class="btn btn-secondary">Save</button>
               </div>
-            </td>
           </td>
             </tr>
             <tr>
@@ -108,11 +102,9 @@
               ></textarea>
             </td>
             <td>
-              <td>
-                <div class="col-2 saveBtn">
-                  <button id="handle" class="btn saveBtn">Save</button>
+                <div class="col-2 saveBtn" data-hr="12">
+                  <button id="handle" class="btn btn-secondary">Save</button>
                 </div>
-              </td>
             </td>
               </tr>
               <tr>
@@ -126,11 +118,9 @@
                 ></textarea>
               </td>
               <td>
-                <td>
-                  <div class="col-2 saveBtn">
-                    <button id="handle" class="btn saveBtn">Save</button>
+                  <div class="col-2 saveBtn" data-hr="1">
+                    <button id="handle" class="btn btn-secondary">Save</button>
                   </div>
-                </td>
               </td>
                 </tr>
                 <tr>
@@ -144,11 +134,9 @@
                   ></textarea>
                 </td>
                 <td>
-                  <td>
-                    <div class="col-2 saveBtn">
-                      <button id="handle" class="btn saveBtn">Save</button>
+                    <div class="col-2 saveBtn" data-hr="2">
+                      <button id="handle" class="btn btn-secondary">Save</button>
                     </div>
-                  </td>
                 </td>
               </tr>
              <tr>
@@ -162,11 +150,9 @@
                 ></textarea>
                 </td>
                 <td>
-                  <td>
-                    <div class="col-2 saveBtn">
-                      <button id="handle" class="btn saveBtn">Save</button>
+                    <div class="col-2 saveBtn" data-hr="3">
+                      <button id="handle" class="btn btn-secondary">Save</button>
                     </div>
-                  </td>
                 </td>
                 </tr>
                 <tr>
@@ -180,11 +166,9 @@
                   ></textarea>
                 </td>
                 <td>
-                  <td>
-                    <div class="col-2 saveBtn">
-                      <button id="handle" class="btn saveBtn">Save</button>
+                    <div class="col-2 saveBtn" data-hr="4">
+                      <button id="handle" class="btn btn-secondary">Save</button>
                     </div>
-                  </td>
                 </td>
                   </tr>
                   <tr>
@@ -198,11 +182,10 @@
                     ></textarea>
                   </td>
                   <td>
-                    <td>
-                      <div class="col-2 saveBtn">
-                        <button id="handle" class="btn saveBtn">Save</button>
+                      <div class="col-2 saveBtn" data-hr="5">
+                        <button id="handle" class="btn btn-secondary">Save</button>
                       </div>
-                    </td>
+
                   </td>
                     </tr>
         </tbody>
@@ -211,6 +194,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>
